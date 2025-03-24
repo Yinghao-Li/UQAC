@@ -1,5 +1,4 @@
 """
-Author: Yinghao Li
 Modified: March 18th, 2025
 ---------------------------------------
 Description: Collection of dataset processing and formatting functions.

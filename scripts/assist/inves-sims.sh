@@ -8,12 +8,12 @@ export PYTHONPATH="."
 for dataset_name in gsm8k math bbh; do
 for model_name in Llama-3.2-1B-Instruct Llama-3.2-3B-Instruct Meta-Llama-3.1-8B-Instruct gemma-2-2b-it gemma-2-9b-it Qwen2.5-1.5B-Instruct Qwen2.5-3B-Instruct Qwen2.5-7B-Instruct DeepSeek-R1-Distill-Llama-8B; do
 
-for top_k_similarity in 10; do
-for similarity_threshold in 0; do
+top_k_similarity=10
+similarity_threshold=0
 
 model_path="../models/$model_name"
 output_dir="./output"
-project_input_root="/localscratch/yli3100/LLM-Uncertainty"
+project_input_root="."
 
 adapter_name=$dataset_name
 disable_adapters=true

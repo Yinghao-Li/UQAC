@@ -1,6 +1,5 @@
 """
-# Author: Yinghao Li
-# Modified: March 18th, 2025
+# Modified: March 24th, 2025
 # ---------------------------------------
 # Description: Collate function for ChemBERTa.
 """

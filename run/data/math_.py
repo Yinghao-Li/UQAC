@@ -1,6 +1,5 @@
 """
-# Author: Yinghao Li
-# Modified: March 13th, 2025
+# Modified: March 24th, 2025
 # ---------------------------------------
 # Description: Download and pre-process the MATH dataset
 """

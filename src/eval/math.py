@@ -1,6 +1,5 @@
 """
-# Author: Yinghao Li
-# Modified: February 28th, 2025
+# Modified: March 24th, 2025
 # ---------------------------------------
 Description: Check whether two math expressions are equivalent. This is used to check the correctness of the model's output.
 Reference: https://github.com/hendrycks/math/blob/main/modeling/math_equivalence.py

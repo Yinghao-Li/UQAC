@@ -1,6 +1,5 @@
 """
-# Author: Yinghao Li
-# Modified: December 3rd, 2024
+# Modified: March 24th, 2025
 # ---------------------------------------
 # Description: Download and pre-process the GSM8K dataset
 """

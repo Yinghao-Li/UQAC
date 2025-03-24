@@ -1,7 +1,6 @@
 """
 dataset.py
 
-Author: Yinghao Li
 Modified: March 18th, 2025
 ---------------------------------------
 Description: Class definition for dataset loading, subset selection,

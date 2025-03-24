@@ -1,6 +1,5 @@
 """
-# Author: Yinghao Li
-# Modified: February 28th, 2025
+# Modified: March 24th, 2025
 # ---------------------------------------
 # Description: Download and pre-process the BBH dataset
 """

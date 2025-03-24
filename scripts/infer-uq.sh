@@ -5,11 +5,11 @@ export CUDA_VISIBLE_DEVICES="3"
 export PYTHONPATH="."
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 
-dataset_name="bbh"
+dataset_name="math"
 
 for model_name in DeepSeek-R1-Distill-Llama-8B;  do
 
-home_path="/localscratch/yli3100/LLM-Uncertainty" 
+home_path="." 
 
 model_path="$home_path/../models/$model_name"
 output_dir="./output"

@@ -6,7 +6,7 @@ export PYTHONPATH="."
 for dataset_name in bbh; do
 for model_name in DeepSeek-R1-Distill-Llama-8B; do
 
-home_path="/localscratch/yli3100/LLM-Uncertainty" 
+home_path="." 
 
 model_path="$home_path/../models/$model_name"
 output_dir="./output"

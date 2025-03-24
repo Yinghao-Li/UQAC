@@ -1,6 +1,5 @@
 
 dataset_name: "bbh"
-# project_input_root: "/localscratch/yli3100/LLM-Uncertainty"
 
 model_name_or_path: "../models/DeepSeek-R1-Distill-Llama-8B"
 output_dir: "./output"

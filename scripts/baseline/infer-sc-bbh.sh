@@ -8,7 +8,7 @@ dataset_name="bbh"
 for model_name in DeepSeek-R1-Distill-Llama-8B; do
 for seed in 0 1 2 3 4; do
 
-home_path="/localscratch/yli3100/LLM-Uncertainty" 
+home_path="." 
 
 model_path="$home_path/../models/$model_name"
 output_dir="./output-sc"

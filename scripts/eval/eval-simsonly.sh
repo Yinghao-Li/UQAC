@@ -10,7 +10,7 @@ for model_name in Llama-3.2-1B-Instruct gemma-2-2b-it Qwen2.5-1.5B-Instruct; do
 for top_k_similarity in 10; do
 for similarity_threshold in 0; do
 
-home_path="/localscratch/yli3100/LLM-Uncertainty" 
+home_path="." 
 model_path="$home_path/../models/$model_name"
 
 output_dir="./output"

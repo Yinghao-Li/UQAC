@@ -4,14 +4,14 @@ export TOKENIZERS_PARALLELISM="false"
 export CUDA_VISIBLE_DEVICES="3"
 export PYTHONPATH="."
 
-dataset_name="bbh"
+dataset_name="math"
 
 for model_name in DeepSeek-R1-Distill-Llama-8B; do
 
-for top_k_similarity in 10; do
-for similarity_threshold in 0; do
+top_k_similarity=10
+similarity_threshold=0
 
-home_path="/localscratch/yli3100/LLM-Uncertainty" 
+home_path="." 
 model_path="$home_path/../models/$model_name"
 output_dir="./output"
 
@@ -57,6 +57,4 @@ python ./run/main.py \
   --report_to $report_to \
   --task infer-ens
 
-done
-done
 done

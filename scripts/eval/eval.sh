@@ -4,13 +4,12 @@ export TOKENIZERS_PARALLELISM="false"
 export CUDA_VISIBLE_DEVICES="0"
 export PYTHONPATH="."
 
-dataset_name="bbh"
+dataset_name="math"
 
 for model_name in Llama-3.2-1B-Instruct Llama-3.2-3B-Instruct Meta-Llama-3.1-8B-Instruct gemma-2-2b-it gemma-2-9b-it Qwen2.5-1.5B-Instruct Qwen2.5-3B-Instruct Qwen2.5-7B-Instruct DeepSeek-R1-Distill-Llama-8B; do
-# for model_name in DeepSeek-R1-Distill-Llama-8B; do
 
-for top_k_similarity in 10; do
-for similarity_threshold in 0; do
+top_k_similarity=10
+similarity_threshold=0
 
 model_path="../models/$model_name"
 output_dir="./output"
@@ -27,7 +26,7 @@ dataset_sorted_by_length=true
 
 report_to="none"
 
-python ./run/eval.py \
+python ./run/eval/eval.py \
   --model_name_or_path $model_path \
   --disable_adapters $disable_adapters \
   --output_dir $output_dir \
@@ -37,6 +36,4 @@ python ./run/eval.py \
   --similarity_threshold $similarity_threshold \
   --report_to $report_to \
 
-done
-done
 done

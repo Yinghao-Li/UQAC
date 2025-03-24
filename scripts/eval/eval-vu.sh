@@ -6,10 +6,9 @@ export PYTHONPATH="."
 
 dataset_name=bbh
 
-# for model_name in Llama-3.2-1B-Instruct Llama-3.2-3B-Instruct Meta-Llama-3.1-8B-Instruct gemma-2-2b-it gemma-2-9b-it Qwen2.5-1.5B-Instruct Qwen2.5-3B-Instruct Qwen2.5-7B-Instruct DeepSeek-R1-Distill-Llama-8B; do
-for model_name in DeepSeek-R1-Distill-Llama-8B; do
+for model_name in Llama-3.2-1B-Instruct Llama-3.2-3B-Instruct Meta-Llama-3.1-8B-Instruct gemma-2-2b-it gemma-2-9b-it Qwen2.5-1.5B-Instruct Qwen2.5-3B-Instruct Qwen2.5-7B-Instruct DeepSeek-R1-Distill-Llama-8B; do
 
-home_path="/localscratch/yli3100/LLM-Uncertainty" 
+home_path="." 
 model_path="$home_path/../models/$model_name"
 output_dir="./output"
 

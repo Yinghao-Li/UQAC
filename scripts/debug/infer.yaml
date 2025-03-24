@@ -1,0 +1,36 @@
+task: "infer-vllm"
+
+dataset_name: "gsm8k"
+
+model_name_or_path: "../models/Llama-3.2-1B-Instruct"
+adapter_name: "gsm8k"
+disable_adapters: true
+output_dir: "./output-test"
+logprobs: 0
+
+pred_dir: "./output-test"
+
+dataset_dir: "./datasets/"
+subsample: 100
+disable_dataset_cache: true
+dataset_num_mapping_proc: 1
+
+logging_steps: 100
+save_strategy: "no"
+
+max_seq_length: 1024
+max_new_tokens: 1024
+disable_seq_length_filter: false
+
+use_peft_lora: false
+
+use_flash_attn: false
+gradient_checkpointing: false
+use_reentrant: false
+
+fp16: false
+bf16: true
+use_4bit_quantization: true
+bnb_4bit_compute_dtype: "bfloat16"
+
+report_to: "none"

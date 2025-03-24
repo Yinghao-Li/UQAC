@@ -1,0 +1,24 @@
+
+dataset_name: "bbh"
+# project_input_root: "/localscratch/yli3100/LLM-Uncertainty"
+
+model_name_or_path: "../models/DeepSeek-R1-Distill-Llama-8B"
+output_dir: "./output"
+attrs_folder: "attrs"
+
+dataset_dir: "./datasets/"
+subsample: 0
+disable_dataset_cache: true
+dataset_num_mapping_proc: 8
+dataset_num_filtering_proc: 1
+per_device_eval_batch_size: 4
+
+dataset_sorted_by_length: true
+
+max_seq_length: 2048
+max_new_tokens: 2048
+
+report_to: "none"
+
+top_k_similarity: 10
+similarity_threshold: 0
